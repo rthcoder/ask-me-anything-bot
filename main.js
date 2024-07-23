@@ -12,15 +12,14 @@ const PORT = process.env.PORT || 8888
 
 const bot = new Telegraf(token);
 
-
+middleware(bot);
+commands(bot);
+controllers(bot);
+bot.launch();
 
 //start server
 !async function () {
     try {
-        middleware(bot);
-        commands(bot);
-        controllers(bot);
-        bot.launch();
         db()
     } catch (error) {
         console.log(error);
