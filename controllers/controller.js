@@ -1,7 +1,6 @@
 import User from "../model/user.model.js"
 
 class Controllers {
-    // user = User.find()
 
     constructor(bot) {
         this.bot = bot;
