@@ -1,11 +1,7 @@
 import User from "../model/user.model.js"
 
-// step 1 - start
-// step 2 - send question
-
 class Commands {
     user = User.find()
-    // user = new PrismaClient().user;
 
     constructor(bot) {
         this.bot = bot;
